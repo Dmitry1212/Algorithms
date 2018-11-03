@@ -14,7 +14,6 @@ class Explorer
         foreach ($iterator as $fileinfo) {
             if (!$fileinfo->isDot()) {
                 if ($fileinfo->isDir()){
-                    //$str .= renderUlLiForDir();
                     $str .= $this->renderUlLiForDir($fileinfo);
                 } else {
                     $str .= $this->renderUlLiForFile($fileinfo);
