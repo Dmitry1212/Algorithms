@@ -1,6 +1,7 @@
 <?php
 
 namespace app\algorithms;
+include ROOT_DIR . "algorithms/scriptTemplate.php";
 
 
 class Explorer
@@ -25,7 +26,7 @@ class Explorer
         return $str;
     }
 
-    public function renderUlLiForDir ($fileinfo){
+    protected function renderUlLiForDir ($fileinfo){
         $str ='';
         $id = $fileinfo->current() . mt_rand() ;
         $str .= "<li onClick=\"toggle_show('{$id}')\"><b>{$fileinfo->current()}</b>";
@@ -36,15 +37,15 @@ class Explorer
         return $str;
     }
 
-    public function renderUlLiForFile($fileinfo){
+    protected function renderUlLiForFile($fileinfo){
         return '<li>' . $fileinfo->current() . '</li>';
     }
 
-    public function renderUlLiStart (){
+    protected function renderUlLiStart (){
         return '<ul>';
     }
 
-    public function renderUlLiEnd(){
+    protected function renderUlLiEnd(){
         return '</ul>';
     }
 }
