@@ -17,15 +17,26 @@ spl_autoload_register([new \app\services\Autoloader(), 'loadClass']);
  * чем использование чистого foreach.
  */
 
-$check = new \app\algorithms\IterVsForeach();
-$check->checkTime();
+//$check = new \app\algorithms\IterVsForeach();
+//$check->checkTime();
 
 
+/**
+ * 3.*Создать PHP-демон, который принимает от пользователя сообщения. Создать отдельный интерфейс с кнопкой,
+ * возвращающей самое старое сообщение на экран и удаляющее его. Базы данных, файлы и иные хранилища не использовать.
+ */
 
 
+/**
+ * ДЗ2
+ * 3. *Реализовать функционал сортировки слиянием.
+ */
+
+$sort = new \app\algorithms\SortSliv();
+$arr = [1,5,8,7,2,5,4,5,3,9];
+var_dump($arr);
+$arr = $sort->sortSliv($arr);
+var_dump($arr);
 
 
-
-//var_dump(microtime (true) - $t1);
-//var_dump($dtFreach2);
 
