@@ -31,12 +31,33 @@ spl_autoload_register([new \app\services\Autoloader(), 'loadClass']);
  * ДЗ2
  * 3. *Реализовать функционал сортировки слиянием.
  */
+//
+//$sort = new \app\algorithms\SortSliv();
+//$arr = [1,5,8,7,2,5,4,5,3,9];
+//var_dump($arr);
+//$arr = $sort->sortSliv($arr);
+//var_dump($arr);
 
-$sort = new \app\algorithms\SortSliv();
-$arr = [1,5,8,7,2,5,4,5,3,9];
-var_dump($arr);
-$arr = $sort->sortSliv($arr);
-var_dump($arr);
 
+/**
+ * ДЗ3 задача 1
+ * Реализовать вывод меню на основе Clojure table.
+ */
+
+$tree = new \app\algorithms\ClosureTable();
+echo $tree->getTree();
+
+
+/**
+ * ДЗ3 задача 2
+ * 2. Дано слово, состоящее только из строчных латинских букв. Проверить, является ли оно палиндромом.
+ * При решении этой задачи нельзя пользоваться циклами.
+ */
+//
+//$string = 'qweoewq';
+//echo 'Проверяемое слово: ' . $string . '<br>';
+//$poly = new \app\algorithms\Polindrom();
+//echo  ($poly->isPolindrom($string)) ? 'Это слово полиндром' : 'это слово НЕ полиндром';
+//
 
 
